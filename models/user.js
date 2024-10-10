@@ -28,6 +28,9 @@ const userSchema = new mongoose.Schema({
     appInstallationId: {
         type: String,
         required: true
+    },
+    userUniqueId: {   // New field for user unique ID
+        type: String,
     }
 });
 
