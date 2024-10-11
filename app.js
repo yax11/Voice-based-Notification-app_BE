@@ -22,7 +22,8 @@ admin.initializeApp({
 app.use(bodyParser.json());
 
 // Connect to MongoDB
-mongoose.connect('mongodb://127.0.0.1:27017/AudioNotification', {
+// mongoose.connect('mongodb://127.0.0.1:27017/AudioNotification', {
+mongoose.connect('mongodb+srv://yakubuharuna11:AOxUuIrzHiIR9JWF@cluster0.hzvxz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
 }).then(() => {
     console.log('Connected to MongoDB');
 }).catch(err => {
